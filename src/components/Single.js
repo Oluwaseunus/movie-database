@@ -18,6 +18,10 @@ const Single = props => {
 		<>
 			{details.title && (
 				<div>
+					<img
+						src={`https://image.tmdb.org/t/p/w500${details.poster_path}`}
+						alt={`${details.title} poster`}
+					/>
 					<h2>{details.title}</h2>
 					<p>{details.overview}</p>
 				</div>
